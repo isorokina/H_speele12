@@ -82,15 +82,15 @@ for k in range(6):
                         print(minejums)
                         pygame.draw.rect(screen, gray, (0, 0, 600, 100))
                         z=1
-                        check_letters()
-                        letter_colors()
+                        #check_letters()
+                        #letter_colors()
 
                         
                     else: 
                         warning = w_font.render("Nepietiekami daudz burtu", True, black)
                         screen.blit(warning,(100, 60))
                         #time.sleep(2)
-                        
+
                         
                 if event.key == pygame.K_BACKSPACE:
                     user_text = user_text[:-2]
