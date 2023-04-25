@@ -94,7 +94,7 @@ for k in range(6):
                         
                 if event.key == pygame.K_BACKSPACE:
                     user_text = user_text[:-2]
-                    screen.fill(gray)
+                    #screen.fill(gray)
                     surface1()
                 
                     
