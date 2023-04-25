@@ -84,14 +84,19 @@ for k in range(6):
                         z=1
                         check_letters()
                         letter_colors()
+
                         
                     else: 
                         warning = w_font.render("Nepietiekami daudz burtu", True, black)
                         screen.blit(warning,(100, 60))
                         #time.sleep(2)
                         
+                        
                 if event.key == pygame.K_BACKSPACE:
                     user_text = user_text[:-2]
+                    screen.fill(gray)
+                    surface1()
+                
                     
                 else:
                     if len(user_text)<=9:
@@ -99,8 +104,8 @@ for k in range(6):
                             user_text += event.unicode + " " 
         
 
-        screen.fill(gray)
-        surface1()
+        #screen.fill(gray)
+        #surface1()
         txtsurf = base_font.render(user_text, True, black)
         screen.blit(txtsurf,(105, 100+100*k))
         pygame.display.flip()
